@@ -2,6 +2,7 @@ module.exports =
 class AmpagesView
   constructor: (serializedState) ->
     # Create root element
+
     @element = document.createElement('div')
     @element.classList.add('ampages')
 
@@ -10,6 +11,7 @@ class AmpagesView
     message.textContent = "The Ampages package is Alive! It's ALIVE!"
     message.classList.add('message')
     @element.appendChild(message)
+
 
   # Returns an object that can be retrieved when package is activated
   serialize: ->
