@@ -27,8 +27,8 @@ module.exports = Ampages =
   toggle: ->
     console.log 'Ampages was toggled!'
 
-    atom.workspace.open("file:///Users/slevin/.atom/packages/ampages/pages/20150723.txt", {}).then (te) ->
-      te.insertTest("sean rules")
+    atom.workspace.open("/Users/slevin/wrk/ampages/pages/20150724.txt", {searchAllPanes: true}).then (te) ->
+      te.insertText("sean rules")
 
     ###
     if @modalPanel.isVisible()
